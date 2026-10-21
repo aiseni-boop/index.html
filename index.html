@@ -11,7 +11,9 @@
     <input type="number" id="nr2">
     <br>
     <button type="submit" onclick="sum()">+</button>
-    <p id="result"></p>
+    <button type="submit" onclick="divide()">-</button>
+    <p id="result">shuma=</p>
+    <p id="result1">zbritje=</p>
 
 
     <script>
@@ -22,6 +24,12 @@
         var c=a+b;
         document.getElementById('result').innerHTML=c;
       }
+      function divide()
+      {
+       var a=number(document.getElementById('nr1').value);
+         var b=number(document.getElementById('nr2').value);
+        var c=a-b;
+          document.getElementById('result').innerHTML=c;
     </script>
   </body>
   </html>
