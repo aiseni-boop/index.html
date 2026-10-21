@@ -1,36 +1,44 @@
+
+<!DOCTYPE html>
 <html>
-  <head>
+<head>
   <meta charset="UTF-8">
-  <title> Java 1 </title>
-  </head>
-  <body>
-<label>Numri i pare</label>
-    <input type="number" id="nr1">
-    <br>
-    <label>Numri i dyte</label>
-    <input type="number" id="nr2">
-    <br>
-    <button type="submit" onclick="sum()">+</button>
-    <button type="submit" onclick="divide()">-</button>
-    <p id="result">shuma=</p>
-    <p id="result1">zbritje=</p>
+  <title>Java 1</title>
+</head>
+<body>
 
+  <label>Numri i pare</label>
+  <input type="number" id="nr1">
+  <br>
 
-    <script>
-      function sum()
-      {
-        var a=Number(document.getElementById('nr1').value);
-         var b=Number(document.getElementById('nr2').value);
-        var c=a+b;
-        document.getElementById('result').innerHTML=c;
-      }
-      function divide()
-      {
-       var a=Number(document.getElementById('nr1').value);
-         var b=Number(document.getElementById('nr2').value);
-        var c=a-b;
-          document.getElementById('result1').innerHTML=c;
-      }
-    </script>
-  </body>
-  </html>
+  <label>Numri i dyte</label>
+  <input type="number" id="nr2">
+  <br>
+
+  <button type="button" onclick="sum()">+</button>
+  <button type="button" onclick="subtract()">-</button>
+
+  <p id="result">shuma =</p>
+  <p id="result1">zbritje =</p>
+
+  <script>
+    function sum() {
+      var a = Number(document.getElementById('nr1').value);
+      var b = Number(document.getElementById('nr2').value);
+      var c = a + b;
+
+      document.getElementById('result').innerHTML = "shuma = " + c;
+    }
+
+    function subtract() {
+      var a = Number(document.getElementById('nr1').value);
+      var b = Number(document.getElementById('nr2').value);
+      var c = a - b;
+
+      document.getElementById('result1').innerHTML = "zbritje = " + c;
+    }
+  </script>
+
+</body>
+</html>
+
