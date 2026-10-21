@@ -17,9 +17,14 @@
 
   <button type="button" onclick="sum()">+</button>
   <button type="button" onclick="subtract()">-</button>
+  
+  <button type="button" onclick="times()">x</button>
+  <button type="button" onclick="divide()">/</button>
 
   <p id="result">shuma =</p>
   <p id="result1">zbritje =</p>
+    <p id="result2">shumzimi =</p>
+  <p id="result3">pjestimi =</p>
 
   <script>
     function sum() {
@@ -27,7 +32,7 @@
       var b = Number(document.getElementById('nr2').value);
       var c = a + b;
 
-      document.getElementById('result').innerHTML = "shuma = " + c;
+      document.getElementById('result').innerHTML=c;
     }
 
     function subtract() {
@@ -35,8 +40,23 @@
       var b = Number(document.getElementById('nr2').value);
       var c = a - b;
 
-      document.getElementById('result1').innerHTML = "zbritje = " + c;
+      document.getElementById('result1').innerHTML=c;
     }
+    function times() {
+      var a = Number(document.getElementById('nr1').value);
+      var b = Number(document.getElementById('nr2').value);
+      var c = a * b;
+
+      document.getElementById('result2').innerHTML=c;
+    }
+    function divide() {
+      var a = Number(document.getElementById('nr1').value);
+      var b = Number(document.getElementById('nr2').value);
+      var c = a / b;
+
+      document.getElementById('result3').innerHTML=c;
+    }
+      
   </script>
 
 </body>
