@@ -24,8 +24,26 @@
   <p id="result1">zbritje =</p>
     <p id="result2">shumzimi =</p>
   <p id="result3">pjestimi =</p>
+  <br>
+  <hr>
+
+  <h1>Rritje/Zbritje numri</h1>
+
+  <p id="numri">0</p>
+  <button type="submit" onclick="rritje()">Rritje +</button>
+  <button type="submit" onclick="zbritje()">Zbritje -</button>
+  
 
   <script>
+var n=0;
+    function rritje() {
+    n=n+1;
+      document.getElementById('numri').innerHTML=n;
+    }
+    
+
+
+    
     function sum() {
       var a = Number(document.getElementById('nr1').value);
       var b = Number(document.getElementById('nr2').value);
